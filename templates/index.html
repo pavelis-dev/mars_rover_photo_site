@@ -1,1 +1,38 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div>
+        <form action="#" method="get" class="form">
+            <p class="title_rover">Выберите марсоход:</p>
+            <div class="buttons">
+                <div>
+                    <button type="submit" class="btn_p" name="rover" value="Perseverance">Perseverance</button>
+                </div>
+                <div>
+                    <button type="submit" class="btn_c" name="rover" value="Curiosity">Curiosity</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="photo">
+        <div class="data">
+            <div class="title_rover">
+                <p class="title_date">Фото сделаны: {{ date }}</p>
+                <p class="title_name">Марсоход: "{{ marsohod }}"</p>
+            </div>
+            <img src="{{ rovers_src[marsohod] }}" class="rover_photo">
+        </div>
+        <div class="mars_photo">
+            {% for i in photos %}
+            <p class="title_camera">{{ i['camera']['full_name'] }}</p>
+            <img class="photo_size" src="{{ i['img_src'] }}">
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
