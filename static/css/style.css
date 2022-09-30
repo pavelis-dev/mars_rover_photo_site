@@ -1,1 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    max-width: 1024px;
+    margin: auto;
+    background-image: url('https://oboi-telefon.ru/wallpapers/44214/34486.jpg');
+    background-size: 100%;
+}
+
+.title_rover {
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.form {
+    margin: 15px 0;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.buttons {
+    display: flex;
+}
+
+.btn_p, .btn_c, .btn_o, .btn_s {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 10px;
+    width: 110px;
+    height: 30px;
+}
+
+.data {
+    margin: 15px 0;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    background-color: #fff;
+}
+
+.title_date, .title_name {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.title_date {
+    margin-top: 70px;
+}
+
+.title_name {
+    margin-top: 10px;
+}
+
+.rover_photo {
+    height: 250px;
+    margin-left: 40px;
+}
+
+.mars_photo {
+    margin: 15px 0;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+.photo_size {
+    margin-top: 10px;
+    width: 1004px;
+    margin-bottom: 25px;
+}
+
+.title_camera {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
