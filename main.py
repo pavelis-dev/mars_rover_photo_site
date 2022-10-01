@@ -28,5 +28,5 @@ def mars_photos():
     date = '.'.join(date_list)
     return render_template('index.html', photos=photos, date=date, marsohod=marsohod, rovers_src=rovers_src)
 
-
-app.run()
+if __name__ == '__main__':
+    app.run()
